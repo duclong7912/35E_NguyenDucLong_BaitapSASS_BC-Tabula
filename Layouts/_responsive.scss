@@ -1,0 +1,957 @@
+
+// Small -------------- Width < 576px
+@include responsive2('small') {
+    header {
+        max-width: 100%;
+        position: absolute;
+        background: white;
+        .header__container{
+            width: 85%;
+            margin: auto;
+        }
+        &.header__fixed{
+            max-width: 100%;
+            position: fixed;
+            background: white;
+            .navbar{
+                padding: 0;
+            }
+            .navbar-brand{
+                padding: 0 41px;
+                position: relative;
+                img{
+                    width: 48px;
+                    display: inline-block;
+                }
+            }
+            .navbar-toggler{
+                position: absolute;
+                left: 0;
+                top: 6px;
+                i{
+                    font-size: 25px;
+                    font-weight: 700;
+                }
+            }
+            .navbar-collapse{
+                text-align: center;
+                .navbar-nav{
+                    padding: 20px 0;
+                }
+                .nav-item{
+                    padding: 10px 0;
+                    .nav-link{
+                        color: $nav-color;
+                        font-weight: $fw-5;
+                        &::after{
+                            content: unset;
+                        }
+                    }
+                }
+            }
+            .header__contact{
+                display: inline-block !important;
+                .header__phone{
+                    padding: 50px 0 15px;
+                }
+            }
+            .header__social{
+                padding-bottom: 20px;
+            }
+        }
+        .navbar-brand{
+            padding: 0 41px;
+            position: relative;
+            img{
+                width: 48px;
+            }
+        }
+        
+        .navbar-toggler{
+            position: absolute;
+            left: 0px;
+            top: 6px;
+            padding: 0.25rem 0;
+            i{
+                font-size: 25px;
+                font-weight: 700;
+            }
+        }
+        .navbar-collapse{
+            text-align: center;
+            .navbar-nav{
+                padding: 20px 0;
+            }
+            .nav-item{
+                padding: 10px 0;
+                .nav-link{
+                    color: $nav-color;
+                    font-weight: $fw-5;
+                    &::after{
+                        content: unset;
+                    }
+                }
+            }
+        }
+        .header__contact{
+            display: inline-block !important;
+            .header__phone{
+                padding: 50px 0 15px;
+            }
+        }
+        .header__social{
+            padding-bottom: 20px;
+        }
+        
+    }
+
+    // Carousel
+    .carousel{
+        
+        .carousel__container{
+            width: 85%;
+            margin: auto;
+        }
+        .carousel__content{
+            padding: 110px 0 50px;
+            .carousel__aboutUs{
+                h6{
+                    font-size: $fs-9;
+                }
+                h1{
+                    font-size: $fs-10;
+                }
+            }
+        }
+        .carousel__right{
+            margin-top: 40px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    // Team
+
+    .team{
+        .team__container{
+            width: 85%;
+            margin: auto;
+        }
+        .team__content{
+            .mg-top{
+                margin-top: 0;
+                &.animate1{
+                    margin-top: 40px;
+                }
+            }
+        }
+        
+    }
+
+    // Courses
+    .courses{
+        padding: 110px 0 0;
+        .courses__container{
+            width: 85%;
+
+            .courses__content{
+                .courses__img{
+                    width: 100%;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .courses__form{
+            width: 100%;
+            margin-top: 30px;
+            
+            .courses__title{
+                h4{
+                    font-size: $fs-11 !important;
+                }
+            }
+            .courses__user{
+                flex-direction: column;
+                .courses__name{
+                    width: 100%;
+                    padding-bottom: 16px;
+                }
+                .courses__email{
+                    width: 100%;
+                }
+            }
+            .courses__button{
+                button{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    // Footer
+    footer{
+        height: 1350px;
+        .footer__container{
+            width: 85%;
+            margin: auto;
+
+            .footer__content{
+                h4{
+                    padding-bottom: 15px;
+                }
+                .footer__info-1{
+                    margin: 0;
+                }
+                .footer__span{
+                    font-size: $fs-12;
+                }
+                .footer__phoneNumber{
+                    padding: 5px 0;
+                }
+                .col-12{
+                    margin-bottom: 75px;
+                }
+                li{
+                    font-size: $fs-12;
+                }
+                .footer__about{
+                    padding: 0 15px;
+                }
+                .footer__form{
+                    display: unset;
+                    input{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+// Medium -------------- Width < 768px & Width > 576px
+@include responsive('medium', 'small') {
+    // Header
+    header{
+        max-width: 100%;
+        position: absolute;
+        background: white;
+        .header__container{
+            max-width: 92%;
+            margin: auto;
+        }
+        &.header__fixed{
+            max-width: 100%;
+            position: fixed;
+            background: white;
+            .header__container{
+                max-width: 92%;
+                margin: auto;
+            }
+            .navbar{
+                padding: 0;
+            }
+            .navbar-brand{
+                padding: 0 41px;
+                position: relative;
+                img{
+                    width: 48px;
+                    display: inline-block;
+                }
+            }
+            .navbar-toggler{
+                position: absolute;
+                left: 0;
+                top: 6px;
+                i{
+                    font-size: 25px;
+                    font-weight: 700;
+                }
+            }
+            .navbar-collapse{
+                text-align: center;
+                .navbar-nav{
+                    padding: 20px 0;
+                }
+                .nav-item{
+                    padding: 10px 0;
+                    .nav-link{
+                        color: $nav-color;
+                        font-weight: $fw-5;
+                        &::after{
+                            content: unset;
+                        }
+                    }
+                }
+            }
+            .header__contact{
+                display: inline-block !important;
+                .header__phone{
+                    padding: 50px 0 15px;
+                }
+            }
+            .header__social{
+                padding-bottom: 20px;
+            }
+        }
+        .navbar-brand{
+            padding: 0 41px;
+            position: relative;
+            img{
+                width: 48px;
+            }
+        }
+        
+        .navbar-toggler{
+            position: absolute;
+            left: 0px;
+            top: 6px;
+            padding: 0.25rem 0;
+            i{
+                font-size: 25px;
+                font-weight: 700;
+            }
+        }
+        .navbar-collapse{
+            text-align: center;
+            .navbar-nav{
+                padding: 20px 0;
+            }
+            .nav-item{
+                padding: 10px 0;
+                .nav-link{
+                    color: $nav-color;
+                    font-weight: $fw-5;
+                    &::after{
+                        content: unset;
+                    }
+                }
+            }
+        }
+        .header__contact{
+            display: inline-block !important;
+            .header__phone{
+                padding: 50px 0 15px;
+            }
+        }
+        .header__social{
+            padding-bottom: 20px;
+        }
+    }
+
+    // Carousel
+
+    .carousel{
+        .carousel__container{
+            max-width: 92%;
+            margin: auto;
+        }
+        .carousel__content{
+            padding: 110px 0;
+
+            .carousel__aboutUs{
+                h6{
+                    font-size: $fs-9;
+                }
+                h1{
+                    font-size: $fs-10;
+                }
+            }
+        }
+        .carousel__right{
+            margin-top: 40px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    // Team
+
+    .team{
+        .team__container{
+            max-width: 92%;
+            margin: auto;
+        }
+        .team__content{
+            .mg-top{
+                margin-top: 40px;
+                &.animate3{
+                    margin-top: 0;
+                }
+                &.animate4{
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+
+    // Courses
+
+    .courses{
+        padding: 110px 0 0;
+
+        .courses__container{
+            max-width: 92%;
+            margin: auto;
+            .courses__content{
+                .courses__img{
+                    width: 100%;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+            .courses__form{
+                width: 100%;
+                margin-top: 30px;
+                
+                .courses__title{
+                    h4{
+                        font-size: $fs-11 !important;
+                    }
+                }
+                .courses__user{
+                    flex-direction: column;
+                    .courses__name{
+                        width: 100%;
+                        padding-bottom: 16px;
+                    }
+                    .courses__email{
+                        width: 100%;
+                    }
+                }
+                .courses__button{
+                    button{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    // Footer
+
+    footer{
+        height: 800px;
+        .footer__container{
+            max-width: 92%;
+            margin: auto;
+
+            .footer__content{
+                h4{
+                    padding-bottom: 15px;
+                }
+                .footer__info-1{
+                    margin: 0;
+                }
+                .footer__span{
+                    font-size: $fs-12;
+                }
+                .footer__phoneNumber{
+                    padding: 5px 0;
+                }
+                .col-12{
+                    margin-bottom: 75px;
+                }
+                li{
+                    font-size: $fs-12;
+                }
+                .footer__about{
+                    padding: 0 15px;
+                }
+                .footer__form{
+                    display: unset;
+                    input{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+// Large -------------- Width < 992 & Width > 768px
+@include responsive('large', 'medium') {
+    // Header
+    header{
+        max-width: 100%;
+        position: absolute;
+        background: white;
+        .header__container{
+            max-width: 94%;
+            margin: auto;
+        }
+        &.header__fixed{
+            max-width: 100%;
+            position: fixed;
+            background: white;
+            .header__container{
+                max-width: 94%;
+                margin: auto;
+            }
+            .navbar{
+                padding: 0;
+            }
+            .navbar-brand{
+                padding: 0 41px;
+                position: relative;
+                img{
+                    width: 48px;
+                    display: inline-block;
+                }
+            }
+            .navbar-toggler{
+                position: absolute;
+                left: 0;
+                top: 6px;
+                i{
+                    font-size: 25px;
+                    font-weight: 700;
+                }
+            }
+            .navbar-collapse{
+                text-align: center;
+                .navbar-nav{
+                    padding: 20px 0;
+                }
+                .nav-item{
+                    padding: 10px 0;
+                    .nav-link{
+                        color: $nav-color;
+                        font-weight: $fw-5;
+                        &::after{
+                            content: unset;
+                        }
+                    }
+                }
+            }
+            .header__contact{
+                display: inline-block !important;
+                .header__phone{
+                    padding: 50px 0 15px;
+                }
+            }
+            .header__social{
+                padding-bottom: 20px;
+            }
+        }
+        .navbar-brand{
+            padding: 0 41px;
+            position: relative;
+            img{
+                width: 48px;
+            }
+        }
+        
+        .navbar-toggler{
+            position: absolute;
+            left: 0px;
+            top: 6px;
+            padding: 0.25rem 0;
+            i{
+                font-size: 25px;
+                font-weight: 700;
+            }
+        }
+        .navbar-collapse{
+            text-align: center;
+            .navbar-nav{
+                padding: 20px 0;
+            }
+            .nav-item{
+                padding: 10px 0;
+                .nav-link{
+                    color: $nav-color;
+                    font-weight: $fw-5;
+                    &::after{
+                        content: unset;
+                    }
+                }
+            }
+        }
+        .header__contact{
+            display: inline-block !important;
+            .header__phone{
+                padding: 50px 0 15px;
+            }
+        }
+        .header__social{
+            padding-bottom: 20px;
+        }
+    }
+
+    // Carousel
+
+    .carousel{
+        .carousel__container{
+            max-width: 92%;
+            margin: auto;
+        }
+        .carousel__content{
+            padding: 110px 0;
+
+            .carousel__aboutUs{
+                h6{
+                    font-size: $fs-9;
+                }
+                h1{
+                    font-size: $fs-10;
+                }
+            }
+            .carousel__right{
+                margin-top: 40px;
+                img{
+                    width: 70%;
+                }
+            }
+        }
+        
+    }
+
+    // Team
+
+    .team{
+        .team__container{
+            max-width: 92%;
+            margin: auto;
+        }
+        .team__content{
+            .mg-top{
+                margin-top: 40px;
+                &.animate3{
+                    margin-top: 0;
+                }
+                &.animate4{
+                    margin-top: 0;
+                }
+            }
+            .team__item{
+                .team__info{
+                    padding: 30px 24px 35px;
+                }
+            }
+        }
+    }
+
+    // Courses
+
+    .courses{
+        padding: 110px 0 0;
+
+        .courses__container{
+            max-width: 92%;
+            margin: auto;
+            .courses__content{
+                .courses__img{
+                    width: 100%;
+                    img{
+                        width: 70%;
+                    }
+                }
+            }
+            .courses__form{
+                width: 100%;
+                margin-top: 30px;
+                
+                .courses__title{
+                    h4{
+                        font-size: $fs-11 !important;
+                    }
+                }
+                .courses__user{
+                    flex-direction: row;
+                    .courses__name{
+                        width: 49%;
+                    }
+                    .courses__email{
+                        width: 49%;
+                    }
+                }
+                
+            }
+        }
+    }
+
+    // Footer
+
+    footer{
+        height: 800px;
+        .footer__container{
+            max-width: 92%;
+            margin: auto;
+
+            .footer__content{
+                h4{
+                    padding-bottom: 15px;
+                }
+                .footer__info-1{
+                    margin: 0;
+                }
+                .footer__span{
+                    font-size: $fs-12;
+                }
+                .footer__phoneNumber{
+                    padding: 5px 0;
+                }
+                .col-12{
+                    margin-bottom: 75px;
+                }
+                li{
+                    font-size: $fs-12;
+                }
+                .footer__about{
+                    padding: 0 15px;
+                }
+                .footer__form{
+                    display: unset;
+                    input{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include responsive('extra-large', 'large') {
+    .container{
+        max-width: 94% !important;
+        margin: auto;
+    }
+    // Header
+    header{
+        max-width: 100%;
+        position: absolute;
+        background: white;
+        .header__container{
+            max-width: 94%;
+            margin: auto;
+        }
+        &.header__fixed{
+            max-width: 100%;
+            position: fixed;
+            background: white;
+            .header__container{
+                max-width: 94%;
+                margin: auto;
+            }
+            .navbar{
+                padding: 0;
+            }
+            .navbar-brand{
+                padding: 0 41px;
+                position: relative;
+                img{
+                    width: 48px;
+                    display: inline-block;
+                }
+            }
+            .navbar-toggler{
+                position: absolute;
+                left: 0;
+                top: 6px;
+                i{
+                    font-size: 25px;
+                    font-weight: 700;
+                }
+            }
+            .navbar-collapse{
+                text-align: center;
+                .navbar-nav{
+                    padding: 20px 0;
+                }
+                .nav-item{
+                    padding: 10px 0;
+                    .nav-link{
+                        color: $nav-color;
+                        font-weight: $fw-5;
+                        &::after{
+                            content: unset;
+                        }
+                    }
+                }
+            }
+            .header__contact{
+                display: inline-block !important;
+                .header__phone{
+                    padding: 50px 0 15px;
+                }
+            }
+            .header__social{
+                padding-bottom: 20px;
+            }
+        }
+        .navbar-brand{
+            padding: 0 41px;
+            position: relative;
+            img{
+                width: 48px;
+            }
+        }
+        
+        .navbar-toggler{
+            position: absolute;
+            left: 0px;
+            top: 6px;
+            padding: 0.25rem 0;
+            i{
+                font-size: 25px;
+                font-weight: 700;
+            }
+        }
+        .navbar-collapse{
+            text-align: center;
+            .navbar-nav{
+                padding: 20px 0;
+            }
+            .nav-item{
+                padding: 10px 0;
+                .nav-link{
+                    color: $nav-color;
+                    font-weight: $fw-5;
+                    &::after{
+                        content: unset;
+                    }
+                }
+            }
+        }
+        .header__contact{
+            display: inline-block !important;
+            .header__phone{
+                padding: 50px 0 15px;
+            }
+        }
+        .header__social{
+            padding-bottom: 20px;
+        }
+    }
+
+    // Carousel
+
+    .carousel{
+        .carousel__container{
+            max-width: 92%;
+            margin: auto;
+        }
+        .carousel__content{
+            padding: 60px 0;
+
+            .carousel__aboutUs{
+                h6{
+                    font-size: $fs-9;
+                }
+                h1{
+                    font-size: $fs-10;
+                }
+            }
+            .carousel__right{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        
+    }
+
+    // Team
+
+    .team{
+        .team__container{
+            max-width: 92%;
+            margin: auto;
+        }
+        .team__content{
+            .mg-top{
+                margin-top: 40px;
+                
+            }
+            .team__item{
+                .team__info{
+                    padding: 30px 24px 35px;
+                }
+                h4{
+                    font-size: $fs-14;
+                }
+            }
+        }
+    }
+
+    // Courses
+
+    .courses{
+        padding: 110px 0 0;
+
+        .courses__container{
+            max-width: 95%;
+            margin: auto;
+            .courses__content{
+                .courses__img{
+                    width: 100%;
+                    img{
+                        width: 110%;
+                    }
+                }
+            }
+            .courses__form{
+                width: 87%;
+                margin-bottom: 50px;
+                
+                .courses__title{
+                    h4{
+                        font-size: $fs-11 !important;
+                    }
+                }
+                .courses__user{
+                    flex-direction: row;
+                    .courses__name{
+                        width: 48%;
+                    }
+                    .courses__email{
+                        width: 48%;
+                    }
+                }
+                
+            }
+        }
+    }
+
+    // Footer
+
+    footer{
+        height: 500px;
+        .footer__container{
+            max-width: 92%;
+            margin: auto;
+
+            .footer__content{
+                h4{
+                    padding-bottom: 15px;
+                }
+                .footer__info-1{
+                    margin: 0;
+                }
+                .footer__span{
+                    font-size: $fs-12;
+                }
+                .footer__phoneNumber{
+                    padding: 5px 0;
+                }
+                .col-12{
+                    margin-bottom: 75px;
+                }
+                li{
+                    font-size: $fs-12;
+                }
+                .footer__about{
+                    padding: 0 15px;
+                }
+                .footer__form{
+                    input{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

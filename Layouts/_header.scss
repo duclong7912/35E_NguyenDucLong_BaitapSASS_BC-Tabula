@@ -1,0 +1,153 @@
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 69;
+    transition: all .3s;
+    // background: url(./../img/yellow_top_wave_01.png);
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // height: 180px;
+    &.header__fixed{
+        background: white;
+        box-shadow: 0 0 5px 0 rgb(0 0 0 / 15%);
+        animation: fadeInDown 1s;
+        position: fixed;
+        z-index: 69;
+        .navbar{
+            padding: 12px 0;
+        }
+        .navbar-brand{
+            img{
+                display: none;
+            }
+        }
+        .navbar-collapse{
+            .header__contact{
+                .header__phone{
+                    a{
+                        padding: 9px 18px;
+                    }
+                }
+            }
+            .nav-item{
+                .nav-link {
+                    &::after {
+                        content: "";
+                        bottom: -18px;
+
+                    }
+                    &:hover {
+                        color: $main-color;
+    
+                        &::after{
+                            transform: scale(1.5);
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    .header__container{
+        padding: 0;
+    }
+
+    .navbar {
+        padding: 0;
+    }
+    .navbar-brand{
+        padding: 0;
+        img{
+            width: 80px;
+        }
+    }
+
+    .navbar-collapse{
+
+        .nav-item{
+            padding: 0 50px 0 0;
+            .nav-link {
+                @include textStyle($fs-2, $fw-6, $main-primary-color);
+                padding: 0;
+                transition: all .3s;
+                position: relative;
+                &::after {
+                    content: "";
+                    width: 8px;
+                    height: 8px;
+                    background-color: $main-color;
+                    display: block;
+                    border-radius: 50%;
+                    position: absolute;
+                    bottom: -30px;
+                    right: 50%;
+                    transform: scale(0) translateX(50%);
+                    transition: all .3s;
+                }
+                &:hover {
+                    color: $main-color;
+
+                    &::after{
+                        transform: scale(1.5);
+                    }
+                }
+            }
+        }
+
+        .nav-dot {
+            .nav-link {
+                &::after {
+                    content: "";
+                    width: 8px;
+                    height: 8px;
+                    background-color: $main-color;
+                    display: block;
+                    border-radius: 50%;
+                    position: absolute;
+                    bottom: -30px;
+                    right: 50%;
+                    transform: scale(1);
+                    transition: all .3s;
+                }
+
+                &:hover {
+                    &::after{
+                        transform: scale(1.5);
+                    }
+                }
+            }
+        }
+
+        .header__contact{
+            .header__phone{
+                margin: 0 10px;
+
+                a{
+                    padding: 13px 18px;
+                    background: transparent;
+                    box-shadow: 0 0 0 3em #b61984 inset;
+                    @include textStyle($fs-5, $fw-5, $color-white);
+                    border-radius: 25px;
+                    border: 1px solid transparent;
+                    transition: all .3s;
+                    i {
+                        margin-right: 5px;
+                    }
+
+                    &:hover{
+                        text-decoration: none;
+                        box-shadow: 0 0 0 1px #b61984 inset;
+                        color: $main-color;
+                    }
+                }
+            }
+            
+            .header__social{
+                a {
+                    @include social ($main-primary-color, $main-color);    
+                }
+            }
+        }
+    }
+}

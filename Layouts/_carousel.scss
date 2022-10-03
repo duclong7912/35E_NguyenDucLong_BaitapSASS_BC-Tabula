@@ -1,0 +1,49 @@
+.carousel {
+    position: relative;
+    background: url(./../img/yellow_top_wave_01.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    #bottom-image-wrapper {
+        position: absolute;
+        bottom: 0px;
+        > img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+
+    .carousel__content {
+        padding: 60px 0;
+        
+        .carousel__left{
+            width: 50%;
+            padding: 0;
+            opacity: 0;
+            animation: fadeInLeft .5s;
+            animation-delay: .3s;
+            animation-fill-mode: forwards;
+            
+            
+            h6{
+                @include textStyle($fs-3, $fw-6, $main-color)
+            }
+            h1{
+                @include textStyle($fs-4, $fw-7, $main-primary-color)
+            }
+
+        }
+
+        .carousel__right {
+            width: 50%;
+            padding: 0;
+            opacity: 0;
+            animation: fadeIn .5s;
+            animation-delay: .6s;
+            animation-fill-mode: forwards;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

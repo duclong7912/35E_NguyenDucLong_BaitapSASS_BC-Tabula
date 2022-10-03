@@ -1,0 +1,85 @@
+.team {
+        background-color: $bg-color;
+        background-image: url(./../img/Wave_White_bottom_right_shape_01.png);
+        background-position: bottom;
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding: 30px 0 5px;
+        
+    .team__container{
+        padding: 0;
+    }
+    .team__content {
+        &.active{
+            .animate1{
+                opacity: 0;
+                animation: fadeIn 1s;
+                animation-fill-mode: forwards;
+            }
+            .animate2{
+                opacity: 0;
+                animation: fadeIn 1s;
+                animation-delay: .3s;
+                animation-fill-mode: forwards;
+            }
+            .animate3{
+                opacity: 0;
+                animation: fadeIn 1s;
+                animation-delay: .6s;
+                animation-fill-mode: forwards;
+            }
+            .animate4{
+                opacity: 0;
+                animation: fadeIn 1s;
+                animation-delay: .9s;
+                animation-fill-mode: forwards;
+            }
+        }
+
+        .col-3{
+            padding: 0 20px;
+            // opacity: 0;
+        }
+        .mg-top{
+            margin-top: 40px;
+        }
+        .team__item{
+            text-align: center;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: $bg-color-2;
+            transition: all .4s;
+            &:hover {
+                box-shadow: 0 20px 25px 0 rgb(0 0 0 / 15%);
+            }
+            .team__img{
+                width: 100%;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    transform: scale(1);
+                    transition: all 1s;
+                    &:hover {
+                        transform: scale(1.04);
+                    }
+                }
+            }
+            .team__info{
+                padding: 30px 25px 35px;
+            }
+            h6{
+                @include textStyle($fs-6, $fw-6, $main-color);
+            }
+            h4{
+                @include textStyle($fs-1, $fw-7, $main-primary-color);
+                margin-bottom: 15px;
+            }
+            p{
+                @include textStyle($fs-2, $fw-5, $text-color);
+                line-height: 25px;
+                margin: 0;
+            }
+        }
+        
+    }
+}

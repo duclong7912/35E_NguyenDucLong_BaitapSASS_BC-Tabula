@@ -1,0 +1,140 @@
+.courses {
+    padding: 110px 0 25px;
+    background-image: url(./../img/accent_bottom_wave_01.png);
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    .courses__container{
+        width: 1000px;
+        margin: auto;
+    }
+
+    .courses__img{
+        width: 100%;
+        opacity: 0;
+        &.active{
+            animation: fadeInLeft .5s;
+            animation-delay: .3s;
+            animation-fill-mode: forwards; 
+        }
+        
+        
+        img {
+            width: 110%;
+        }
+    }
+    .courses__form{
+        width: 80%;
+        margin-left: auto;
+        opacity: 0;
+        &.active{
+            animation: fadeIn .5s;
+            animation-delay: .6s;
+            animation-fill-mode: forwards;
+        }
+        
+       .courses__form-content{
+            padding: 35px 25px 45px;
+            box-shadow: 0 30px 30px -10px rgb(0 0 0 / 20%);
+            border-radius: 10px;
+            background: white;
+            .courses__title{
+                padding-bottom: 40px;
+                h4{
+                    @include textStyle($fs-7, $fw-7, $main-primary-color)
+                }
+            }
+       }
+    }
+
+
+    .courses__user{
+        padding-bottom: 16px;
+        .courses__name{
+            width: 47%;
+            .icon{
+                i{
+                    @include icon();
+                }
+            }
+        }
+        .courses__email{
+            width: 47%;
+            .icon{
+                i{
+                    @include icon();
+                }
+            }
+        }
+        .input{
+            input {
+                padding: 11px 0px 11px 40px;
+                border-radius: 50px;
+                font-size: $fs-6;
+                border: 1px solid $border-color;
+                outline: none;
+                transition: all .3s;
+                width: 100%;
+                &:focus {
+                    border: 1px solid $input-focus;
+                }
+            }
+        }
+    }
+
+    .courses__nation{
+        padding-bottom: 16px;
+        .icon {
+            i{
+                @include icon();
+            }
+        }
+        select{
+            padding: 11px 0px 11px 40px;
+            width: 100%;
+            border-radius: 50px;
+            font-size: $fs-6;
+            border: 1px solid $border-color;
+            outline: none;
+        }
+    }
+
+    .courses__mess{
+        padding-bottom: 35px;
+        i{
+            @include icon();
+        }
+        span {
+            textarea{
+                width: 100%;
+                padding: 11px 0px 10px 40px;
+                font-size: $fs-6;
+                border-radius: 20px;
+                border: 1px solid $border-color;
+                outline: none;
+                transition: all .3s;
+                &:focus {
+                    border: 1px solid $input-focus;
+                }
+            }
+        }
+    }
+
+    .courses__button {
+        padding-bottom: 25px;
+        button{
+            padding: 14px 55px;
+            background: transparent;
+            box-shadow: 0 0 0 3em #b61984 inset;
+            @include textStyle($fs-5, $fw-5, $color-white);
+            border-radius: 50px;
+            border: 1px solid transparent;
+            transition: all .3s;
+
+            &:hover{
+                box-shadow: 0 0 0 1px #b61984 inset;
+                color: $main-color;
+            }
+        }
+    }
+}

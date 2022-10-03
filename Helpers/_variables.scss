@@ -1,0 +1,44 @@
+$main-color: #b61984;
+$main-primary-color: #191919;
+$color-white: #ffffff;
+$border-color: #b31b8b;
+$text-color: #303030;
+$bg-color: #dcd1f0;
+$bg-color-2: white;
+$border-color: #e5e5e5;
+$input-focus: #b2b2b2;
+$border-footer: #990171;
+$nav-color: #8e8e8e;
+
+//font weight
+$fw-3: 300;
+$fw-4: 400;
+$fw-5: 500;
+$fw-6: 600;
+$fw-7: 700;
+$fw-8: 800;
+$fw-9: 900;
+
+// Font size
+
+$fs-1: 22px;
+$fs-2: 13px;
+$fs-3: 16px;
+$fs-4: 57px;
+$fs-5: 14px;
+$fs-6: 12px;
+$fs-7: 37px;
+$fs-8: 23px;
+$fs-9: 15px;
+$fs-10: 47px;
+$fs-11: 30px;
+$fs-12: 12px;
+$fs-13: 40px;
+$fs-14: 21px;
+// breakPoints
+$breakpoints: (
+    'extra-large': 1200px,
+    'large': 992px,
+    'medium': 768px,
+    'small': 576px,
+)
